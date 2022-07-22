@@ -21,6 +21,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /* Local reset styles */
 
 a {
@@ -652,6 +656,10 @@ img {
   line-height: calc(30 / 16);
 }
 
+/* ======================================== */
+/*                Modal window              */
+/* ======================================== */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -664,7 +672,7 @@ img {
 }
 
 .backdrop.is-hidden {
-  /* visibility: hidden; */
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
@@ -696,7 +704,7 @@ img {
   height: 30px;
   padding: 0;
 
-  background-color: var(--primary-white-color);
+  background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
