@@ -696,7 +696,7 @@ img {
   transition: opacity var(--primary-transition), visibility var(--primary-transition);
 }
 
-.is-hidden {
+.backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
